@@ -1,0 +1,63 @@
+.Navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar .logo{
+    width: 250px;
+    height: 50;
+}
+
+.Navbar .navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: black;
+    font-size: 18px;
+}
+
+.Navbar .navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.Navbar button{
+    background: transparent;
+    font-size: 16px;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3ms;
+}
+
+.Navbar button:hover{
+    background-color: aliceblue;
+}
+
+.Navbar .active{
+    padding: bottom 3px;
+    border-bottom: 3px solid black;
+}
+
+.Navbar li{
+    cursor: pointer;
+}
+
+navbar-search-icon{
+    position: relative;
+}
+
+navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px; 
+}
