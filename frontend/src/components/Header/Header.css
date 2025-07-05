@@ -5,7 +5,6 @@
     background-size: contain;
     position: relative;
 }
-
 .header-contents{
     position: absolute;
     display: flex;
@@ -17,7 +16,6 @@
     left: 6vw;
     animation: fadeIn 3s;
 }
-
 .header-contents h2{
     font-weight: 500;
     color: white;
@@ -40,7 +38,23 @@
     cursor: pointer;
     transition: 0.3ms;
 }
-
 .header-contents button:hover{
     background-color: #f0f0f0;
+}
+@media (max-width: 1050px) {
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media (max-width: 750px) {
+    .header-contents{
+        max-width: 65%;
+    }
+    .header .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 3vw;
+        margin-bottom: 2vw;
+    }
 }
